@@ -15,7 +15,7 @@
    - Chrome / Edge 浏览器
    - Firefox 浏览器
 2. 点击安装脚本：
-   > 👉 [点击这里安装脚本](javascript:void(0))
+   > 👉 [点击这里安装脚本]([javascript:void(0)](https://greasyfork.org/zh-CN/scripts/558986-btc-mini-terminal))
 
 ### 方法二：手动复制脚本
 1. 进入你的油猴扩展页面
@@ -27,43 +27,27 @@
 > 示例：左下角 BTC 实时价格 + K 线图  
 > （此处可插入截图链接：`![预览图](截图URL)`）
 
-## ⚙️ 自定义设置（可选）
+## ⚙️ 自定义设置
+脚本使用以下持久化键（优先使用 GM_getValue / GM_setValue，回退到 localStorage）：
 你可以修改脚本顶部的配置参数，示例如下：
 ```javascript
-const REFRESH_INTERVAL = 5000;  // 行情更新间隔（毫秒）
-const DEFAULT_TIMEFRAME = "1h"; // 默认 K 线周期：1m / 1h / 1d
-const PANEL_SIZE = 280;         // K 线图窗口大小（像素）
+btc_widget_candles — 当前 K 线点数（50/100/200）。
+btc_widget_collapsed — 折叠状态（1 表示折叠，0 表示展开）。
+btc_widget_proxy — 可选代理前缀（例如 https://api.allorigins.win/raw?url=），会在脚本进行网络请求失败时作为代理尝试。
+```
 
-
-🔧 数据源说明
-脚本支持两个数据源：
-数据源	用途	备注
-Binance	主行情来源（K线 + 实时报价）	更快更稳定
-CoinGecko	备用数据（自动 fallback）	全球可访问
-
-
-🛠 技术实现
+## 🛠 技术实现
 使用 Tampermonkey + 原生 JS 编写
 内置 Lightweight-Charts 迷你 K 线图
 自动检测 API 可用性并切换
-无外部 CDN（可选版本），避免 CSP & 网络阻断
 
-📌 未来计划（TODO）
- 添加多币种（ETH / SOL / BNB）
- 添加深色 / 浅色主题自动切换
- 添加简单指标（MA5 / MA30）
- 添加交易所切换（OKX / Binance / Bybit）
- 自定义面板位置（左下 / 右下 / 左上 / 右上）
-
-
-💬 反馈 & 联系
-
+## 💬 反馈 & 联系
 如果你发现问题或有功能建议：
 可添加：
 🐧：1431474270；
 📫：chn.dst.cn@gmail.com
 
-欢迎收藏 ⭐ Star，让更多人看到！
+欢迎收藏 ⭐ Star！
 
 📜 开源协议
 本项目基于 MIT License 开源，欢迎自由修改与分发。
