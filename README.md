@@ -15,7 +15,7 @@
    - Chrome / Edge 浏览器
    - Firefox 浏览器
 2. 点击安装脚本：
-   > 👉 [点击这里安装脚本]([javascript:void(0)](https://greasyfork.org/zh-CN/scripts/558986-btc-mini-terminal))
+   > 👉 *[点击这里安装脚本](https://greasyfork.org/zh-CN/scripts/558986-btc-mini-terminal)*
 
 ### 方法二：手动复制脚本
 1. 进入你的油猴扩展页面
@@ -25,7 +25,9 @@
 
 ## 🖼 预览截图
 > 示例：左下角 BTC 实时价格 + K 线图  
-> （此处可插入截图链接：`![预览图](截图URL)`）
+> ![image](https://github.com/CHN-DST/BTC-Mini-Terminal/blob/main/img/2f2e39ef-53d2-4e34-a589-f59a65aecd40.png)
+> ![image](https://github.com/CHN-DST/BTC-Mini-Terminal/blob/main/img/44441ecc-80f8-47f1-8447-35b6340831b2.png)
+> ![image](https://github.com/CHN-DST/BTC-Mini-Terminal/blob/main/img/c8a50a8b-f7b1-4798-834f-c5de74073192.png)
 
 ## ⚙️ 自定义设置
 脚本使用以下持久化键（优先使用 GM_getValue / GM_setValue，回退到 localStorage）：
